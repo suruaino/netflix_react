@@ -192,6 +192,31 @@ Kids profiles come with PIN-protected parental controls that let you restrict th
     </section>
   )
 }
+
+const Section6 = () => {
+
+
+  return(
+    <section className='section6 text-center px-5 py-10 flex flex-col gap-4'>
+      <h2 className="text-xl">Ready to watch? Enter your email to create or restart your membership.</h2>
+      <form action="" className='w-full flex flex-col items-center md:flex-row gap-4'>
+
+          <input id='email' className='h-12 w-full' type="email" placeholder='Email address' />
+          <button role='submit' className='h-12 px-8 flex justify-center items-center gap-4'>Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </form>
+    </section>
+  )
+}
+
+const Footer = () => {
+  
+
+  return(
+    <footer>
+
+    </footer>
+  )
+}
 function App() {
 
   return (
@@ -203,6 +228,8 @@ function App() {
       <Section3 />
       <Section4 />
       <Section5 />
+      <Section6 />
+      <Footer />
     </>
   )
 }

@@ -109,3 +109,18 @@ body{
 .question input:hover ~ span{
   background-color: var(--faq_quest_hover_bg);
 }
+
+.section6 form input{
+  background-color: rgba(32, 32, 32, 0.466);
+  padding: .2rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.501);
+  border-radius: 4px;
+}
+.section6 form button{
+  background-color: var(--pri_btn_clr);
+  border-radius: 4px;
+  transition: .3s;
+}
+.section6 form button:hover{
+  background-color: var(--pri_btn_clr-hover);
+}
