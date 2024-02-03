@@ -1,20 +1,111 @@
+import 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+  --pri_bg: #000000;
+  --pri-clr: #ffffff;
+  --pri_btn_clr: rgb(200, 14, 14);
+  --pri_btn_clr-hover: rgb(172, 22, 22); 
+  --section_border_clr: rgb(77, 77, 77);
+  --faq_quest_bg: rgb(39, 38, 38);
+  --faq_quest_hover_bg: rgb(49, 49, 49);
+}
+body{
+  width: 100%;
+}
+.root{
+  width: 100%;
 }
 .main_header{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 20;
 }
 .main_header .logo{
   color: red;
-  font-family: bold;
+  font-size: 1.5rem;
+  font-weight: medium;
 }
 .main_header a{
   color: white;
-  background-color: red;
-  padding: .3rem .5rem;
-  border-radius: 8px;
+  background-color: rgb(200, 14, 14);
+  padding: .2rem .5rem;
+  border-radius: 4px;
+}
+.main_header a:hover{
+  background-color: var(--pri_btn_clr-hover);
+}
+
+.hero{
+  width: 100%;
+  height: 70dvh;
+  background: url(./assets/netflix-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border-bottom: 8px solid var(--section_border_clr);
+  
+}
+.hero .overlay{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 1;
+}
+
+.hero .hero_content{
+  height: 100%;
+  width: 100%;
+  color: white;
+  margin-top: 5rem;
+  z-index: 10;
+}
+.hero .hero_content h2{
+  font-size: 1.1rem;
+}
+.hero .hero_content form input{
+  background-color: rgba(11, 11, 11, 0.365);
+  padding: .2rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.501);
+  border-radius: 4px;
+}
+.hero .hero_content form button{
+  background-color: var(--pri_btn_clr);
+  border-radius: 4px;
+  transition: .3s;
+}
+.hero .hero_content form button:hover{
+  background-color: var(--pri_btn_clr-hover);
+}
+
+* section{
+  background-color: var(--pri_bg);
+  color: var(--pri-clr);
+  border-bottom: 8px solid var(--section_border_clr);
+}
+.question span{
+  background-color: var(--faq_quest_bg);
+  transition: .3s;
+}
+.answer{
+  background-color: rgb(64, 64, 64);
+  display: none;
+}
+.question input{
+  cursor: pointer;
+}
+.question input:checked ~ .answer{
+  display: block;
+}
+.question input:hover ~ span{
+  background-color: var(--faq_quest_hover_bg);
 }
