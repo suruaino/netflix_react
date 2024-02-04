@@ -7,7 +7,9 @@ import
 }
 :root{
   --pri_bg: #000000;
+
   --pri-clr: #ffffff;
+  --sec_clr: rgba(255,255,255,0.7);
   --pri_btn_clr: rgb(200, 14, 14);
   --pri_btn_clr-hover: rgb(172, 22, 22); 
   --section_border_clr: rgb(77, 77, 77);
@@ -72,6 +74,10 @@ body{
 .hero .hero_content h2{
   font-size: 1.1rem;
 }
+.hero .hero_content form{
+  display: flex;
+  flex-direction: column;
+}
 .hero .hero_content form input{
 
   background-color: rgba(11, 11, 11, 0.365);
@@ -87,11 +93,27 @@ body{
 .hero .hero_content form button:hover{
   background-color: var(--pri_btn_clr-hover);
 }
-
+@media only screen and (min-width: 600px){
+  .hero .hero_content form{
+    flex-direction: row;
+    gap: .5rem;
+  }
+  .hero .hero_content form input{
+    width: 60%;
+  }
+  .hero .hero_content form button{
+    width: 40%;
+  }
+}
 * section{
   background-color: var(--pri_bg);
   color: var(--pri-clr);
   border-bottom: 8px solid var(--section_border_clr);
+}
+@media only screen and (min-width: 600px){
+  .section1{
+    padding: 4rem 2rem;
+  }
 }
 .faq .content_wrapper{
   max-width: 75rem;
@@ -120,18 +142,19 @@ body{
 }
 
 .bottom_call_to_action{
+
   border: none;
 }
 .bottom_call_to_action form input{
-  max-width: 21rem;
-  height: 3.5rem;
+  width: 90%;
+  height: 3rem;
   background-color: rgba(32, 32, 32, 0.466);
   padding: .2rem 1rem;
   border: 1px solid rgba(255, 255, 255, 0.501);
   border-radius: 4px;
 }
 .bottom_call_to_action form button{
-  height: 3.5rem;
+  height: 3rem;
   background-color: var(--pri_btn_clr);
   border-radius: 4px;
   transition: .3s;
@@ -139,10 +162,42 @@ body{
 .bottom_call_to_action form button:hover{
   background-color: var(--pri_btn_clr-hover);
 }
+@media only screen and (min-width: 600px){
+  .bottom_call_to_action h2{
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
 
+  .bottom_call_to_action form{
+    flex-direction: row;
+    gap: .5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .bottom_call_to_action form input{
+    width: 60%;
+    height: 3.5rem;
+  }
+  .bottom_call_to_action form button{
+      width: 40%;
+      height: 3.5rem;
+      padding: 0 1rem;
+  }
+
+}
+@media only screen and (max-width: 768px){
+  .bottom_call_to_action form input{
+    /* max-width: 21rem; */
+    /* height: 3.5rem; */
+    background-color: rgba(32, 32, 32, 0.466);
+    padding: .2rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.501);
+    border-radius: 4px;
+  }
+}
 footer{
   background-color: var(--pri_bg);
-  color: var(--pri-clr);
+  color: var(--sec_clr);
 }
 footer a{
   text-decoration: underline .2px;

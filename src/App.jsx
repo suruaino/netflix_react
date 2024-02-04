@@ -21,14 +21,14 @@ const Hero =() => {
   return(
     <section className='hero flex flex-col justify-between'>
       <div className="overlay"></div>
-      <div className="hero_content flex flex-col justify-center items-center gap-5">
-        <h1 className='text-3xl text-center font-bold'>Unlimited movies, TV shows, and more</h1>
+      <div className="hero_content text-center font-medium px-10 flex flex-col justify-center items-center gap-5">
+        <h1 className='text-3xl  font-bold'>Unlimited movies, TV shows, and more</h1>
         <h2>Watch anywhere. Cancel anytime</h2>
-        <h2>Readt to watch? Enter your email to <br /> create or restart your membership</h2>
-        <form action="" className='w-full flex flex-col items-center md:flex-row gap-4'>
+        <h2>Readt to watch? Enter your email to create or restart your membership</h2>
+        <form action="" className='w-full gap-4'>
 
-          <input id='email' className='h-12 w-4/5' type="email" placeholder='Email address' />
-          <button role='submit' className='h-12 px-8 flex justify-center items-center gap-4'>Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          <input id='email' className='h-12 w-full md:w-4/5' type="email" placeholder='Email address' />
+          <button role='submit' className='h-12 font-bold px-8 flex justify-center items-center gap-4'>Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></button>
         </form>
       </div>
     </section>
@@ -38,7 +38,7 @@ const Hero =() => {
 const Section1 = () => {
 
   return(
-    <section className='section1 text-center px-5 py-10 flex flex-col md:flex-row '>
+    <section className='section1 text-center px-10 py-10 flex flex-col md:flex-row '>
       <div className="text flex flex-col gap-4">
         <h2 className='text-4xl font-bold'>Enjoy on your TV</h2>
         <p className="text-lg">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
@@ -56,7 +56,7 @@ const Section2 = () => {
     <section className='section1 text-center py-10 px-5 flex flex-col md:flex-row '>
       <div className="text flex flex-col gap-4">
         <h2 className='text-3xl font-bold'>Download your shows to watch offline</h2>
-        <p className="text-lg">Save your favorites easily and always have something to watch.</p>
+        <p className="text-lg font-medium">Save your favorites easily and always have something to watch.</p>
       </div>
       <div className="img">
         <img src={mobile} alt="" />
@@ -68,10 +68,10 @@ const Section2 = () => {
 const Section3 = () => {
 
   return(
-    <section className='section1 text-center py-10 px-5 flex flex-col md:flex-row gap-4'>
+    <section className='section1 text-center py-10 pb-20 px-5 flex flex-col md:flex-row gap-4'>
       <div className="left flex flex-col gap-4">
         <h2 className='text-3xl font-bold'>Watch everywhere</h2>
-        <p className="text-lg">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        <p className="text-lg font-medium">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
       </div>
       <div className="right">
         
@@ -86,7 +86,7 @@ const Section4 = () => {
     <section className='section1 text-center py-10 px-5 flex flex-col md:flex-row gap-4'>
       <div className="left flex flex-col gap-4">
         <h2 className='text-4xl font-bold'>Create profiles for kids</h2>
-        <p className="text-lg">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+        <p className="text-lg font-medium">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
       </div>
       <div className="img">
         <img src={kids} alt="" />
@@ -99,7 +99,7 @@ const Section5 = () => {
 
   return(
     <section className='faq w-full text-center py-10 px-5 flex flex-col items-center gap-8'>
-      <h2 className='text-5xl font-bold'>Frequently Asked Questions</h2>
+      <h2 className=' text-4xl md:text-5xl font-bold'>Frequently Asked Questions</h2>
       <div className="content_wrapper w-full flex flex-col gap-4">
         <div className="questionbx flex flex-col gap-2">
           <div className="question w-full h-auto  flex flex-col justify-between items-center relative">
@@ -188,11 +188,11 @@ const Section5 = () => {
       </div>
      
       <section className='bottom_call_to_action py-6 w-full text-center  flex flex-col items-center justify-center gap-6'>
-          <h2 className="text-xl">Ready to watch? Enter your email to create or restart your membership.</h2>
+          <h2 className="text-xl font-medium px-8">Ready to watch? Enter your email to create or restart your membership.</h2>
           <form action="" className='w-full flex flex-col items-center md:flex-row md:justify-center gap-4 md:gap-2'>
 
-            <input id='email' className='h-12 w-full' type="email" placeholder='Email address' />
-            <button role='submit' className='h-12 text-2xl px-8 flex justify-center items-center gap-4'>Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            <input id='bottom_email' className='w-full' type="email" placeholder='Email address' />
+            <button role='submit' className='text-2xl px-8 flex justify-center items-center gap-4'>Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></button>
           </form>
       </section>
     </section>
@@ -227,12 +227,12 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="bottom">
-        <select name="" id="" className='px-5 py-1'>
-          <option value="English">English</option>
+      <div className="bottom flex flex-col gap-5">
+        <select name="" id="" className='font-bold px-5 py-1 max-w-36'>
+          <option className='' value="English">English</option>
         </select>
 
-        <div className="trade_mark">
+        <div className="trade_mark ">
           Netflix Nigeria
         </div>
       </div>
@@ -250,7 +250,6 @@ function App() {
       <Section3 />
       <Section4 />
       <Section5 />
-      {/* <Section6 /> */}
       <Footer />
     </>
   )
