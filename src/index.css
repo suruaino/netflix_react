@@ -73,6 +73,7 @@ body{
   font-size: 1.1rem;
 }
 .hero .hero_content form input{
+
   background-color: rgba(11, 11, 11, 0.365);
   padding: .2rem 1rem;
   border: 1px solid rgba(255, 255, 255, 0.501);
@@ -92,6 +93,9 @@ body{
   color: var(--pri-clr);
   border-bottom: 8px solid var(--section_border_clr);
 }
+.faq .content_wrapper{
+  max-width: 75rem;
+}
 .question span{
   background-color: var(--faq_quest_bg);
   transition: .3s;
@@ -99,28 +103,65 @@ body{
 .answer{
   background-color: rgb(64, 64, 64);
   display: none;
+  
 }
 .question input{
   cursor: pointer;
 }
 .question input:checked ~ .answer{
   display: block;
+ 
+}
+.question input:checked ~ span img{
+  transform: rotate(45deg);
 }
 .question input:hover ~ span{
   background-color: var(--faq_quest_hover_bg);
 }
 
-.section6 form input{
+.bottom_call_to_action{
+  border: none;
+}
+.bottom_call_to_action form input{
+  max-width: 21rem;
+  height: 3.5rem;
   background-color: rgba(32, 32, 32, 0.466);
   padding: .2rem 1rem;
   border: 1px solid rgba(255, 255, 255, 0.501);
   border-radius: 4px;
 }
-.section6 form button{
+.bottom_call_to_action form button{
+  height: 3.5rem;
   background-color: var(--pri_btn_clr);
   border-radius: 4px;
   transition: .3s;
 }
-.section6 form button:hover{
+.bottom_call_to_action form button:hover{
   background-color: var(--pri_btn_clr-hover);
 }
+
+footer{
+  background-color: var(--pri_bg);
+  color: var(--pri-clr);
+}
+footer a{
+  text-decoration: underline .2px;
+}
+
+footer .center ul{
+  display: grid;
+  grid-template-columns:  repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+ footer .bottom select{
+    border: 1px solid var(--section_border_clr);
+    border-radius: 4px;
+    background-color: rgba(77, 77, 77, 0.315);
+ }
+/* @media only screen and (min-width: 768px){
+  footer .center ul{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+} */

@@ -98,15 +98,15 @@ const Section4 = () => {
 const Section5 = () => {
 
   return(
-    <section className='faq text-center py-10 px-5 flex flex-col md:flex-row gap-8'>
-      <h2 className='text-4xl font-bold'>Frequently Asked Questions</h2>
-      <div className="content_wrapper flex flex-col gap-4">
+    <section className='faq w-full text-center py-10 px-5 flex flex-col items-center gap-8'>
+      <h2 className='text-5xl font-bold'>Frequently Asked Questions</h2>
+      <div className="content_wrapper w-full flex flex-col gap-4">
         <div className="questionbx flex flex-col gap-2">
           <div className="question w-full h-auto  flex flex-col justify-between items-center relative">
             <input type="checkbox" className='w-full h-full absolute opacity-0' hecked/>
-            <span className='w-full h-16 px-6 flex justify-between items-center'>
-              <h4 className='text-xl'>What is Netflix?</h4>
-              <img className='' src={cross} alt="" width={10} />
+            <span className='w-full h-16 md:h-20 px-6 flex justify-between items-center'>
+              <h4 className='text-xl md:text-2xl'>What is Netflix?</h4>
+              <img className='w-3 md:w-6' src={cross} alt=""  />
             </span>
             <div className="answer px-6 py-4 text-left">
               <p className='text-xl'>
@@ -118,9 +118,9 @@ const Section5 = () => {
           
           <div className="question w-full h-auto  flex flex-col justify-between items-center relative">
             <input type="checkbox" className='w-full h-full absolute opacity-0' hecked/>
-            <span className='w-full h-16 px-6 flex justify-between items-center'>
-              <h4 className='text-xl'>How much does Netflix cost?</h4>
-              <img className='' src={cross} alt="" width={10} />
+            <span className='w-full h-16 md:h-20 px-6 flex justify-between items-center'>
+              <h4 className='text-xl md:text-2xl'>How much does Netflix cost?</h4>
+              <img className='w-3 md:w-6' src={cross} alt=""  />
             </span>
             <div className="answer px-6 py-4 text-left">
               <p className='text-xl'>
@@ -131,24 +131,23 @@ const Section5 = () => {
 
           <div className="question w-full h-auto  flex flex-col justify-between items-center relative">
             <input type="checkbox" className='w-full h-full absolute opacity-0' hecked/>
-            <span className='w-full h-16 px-6 flex justify-between items-center'>
-              <h4 className='text-xl'>Where can I watch?</h4>
-              <img className='' src={cross} alt="" width={10} />
+            <span className='w-full h-16 md:h-20 px-6 flex justify-between items-center'>
+              <h4 className='text-xl md:text-2xl'>Where can I watch?</h4>
+              <img className='w-3 md:w-6' src={cross} alt=""  />
             </span>
             <div className="answer px-6 py-4 text-left">
               <p className='text-xl'>
               Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. <br /> <br />
-
-You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+              You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
               </p>
             </div>
           </div>
 
           <div className="question w-full h-auto  flex flex-col justify-between items-center relative">
             <input type="checkbox" className='w-full h-full absolute opacity-0' hecked/>
-            <span className='w-full h-16 px-6 flex justify-between items-center'>
-              <h4 className='text-xl'>How do I cancel?</h4>
-              <img className='' src={cross} alt="" width={10} />
+            <span className='w-full h-16 md:h-20 px-6 flex justify-between items-center'>
+              <h4 className='text-xl md:text-2xl'>How do I cancel?</h4>
+              <img className='w-3 md:w-6' src={cross} alt=""  />
             </span>
             <div className="answer px-6 py-4 text-left">
               <p className='text-xl'>
@@ -159,9 +158,9 @@ You can also download your favorite shows with the iOS, Android, or Windows 10 a
 
           <div className="question w-full h-auto  flex flex-col justify-between items-center relative">
             <input type="checkbox" className='w-full h-full absolute opacity-0' hecked/>
-            <span className='w-full h-16 px-6 flex justify-between items-center'>
-              <h4 className='text-xl'>What can I watch on Netflix?</h4>
-              <img className='' src={cross} alt="" width={10} />
+            <span className='w-full h-16 md:h-20 px-6 flex justify-between items-center'>
+              <h4 className='text-xl md:text-2xl'>What can I watch on Netflix?</h4>
+              <img className='w-3 md:w-6' src={cross} alt="" />
             </span>
             <div className="answer px-6 py-4 text-left">
               <p className='text-xl'>
@@ -172,15 +171,14 @@ You can also download your favorite shows with the iOS, Android, or Windows 10 a
 
           <div className="question w-full h-auto  flex flex-col justify-between items-center relative">
             <input type="checkbox" className='w-full h-full absolute opacity-0' hecked/>
-            <span className='w-full h-16 px-6 flex justify-between items-center'>
-              <h4 className='text-xl'>Is Netflix good for kids?</h4>
-              <img className='' src={cross} alt="" width={10} />
+            <span className='w-full h-16 md:h-20 px-6 flex justify-between items-center'>
+              <h4 className='text-xl md:text-2xl'>Is Netflix good for kids?</h4>
+              <img className='w-3 md:w-6' src={cross} alt=""  />
             </span>
             <div className="answer px-6 py-4 text-left">
               <p className='text-xl'>
               The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space. <br /> <br />
-
-Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+              Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
               </p>
             </div>
           </div>
@@ -189,21 +187,14 @@ Kids profiles come with PIN-protected parental controls that let you restrict th
         
       </div>
      
-    </section>
-  )
-}
+      <section className='bottom_call_to_action py-6 w-full text-center  flex flex-col items-center justify-center gap-6'>
+          <h2 className="text-xl">Ready to watch? Enter your email to create or restart your membership.</h2>
+          <form action="" className='w-full flex flex-col items-center md:flex-row md:justify-center gap-4 md:gap-2'>
 
-const Section6 = () => {
-
-
-  return(
-    <section className='section6 text-center px-5 py-10 flex flex-col gap-4'>
-      <h2 className="text-xl">Ready to watch? Enter your email to create or restart your membership.</h2>
-      <form action="" className='w-full flex flex-col items-center md:flex-row gap-4'>
-
-          <input id='email' className='h-12 w-full' type="email" placeholder='Email address' />
-          <button role='submit' className='h-12 px-8 flex justify-center items-center gap-4'>Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></button>
-        </form>
+            <input id='email' className='h-12 w-full' type="email" placeholder='Email address' />
+            <button role='submit' className='h-12 text-2xl px-8 flex justify-center items-center gap-4'>Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </form>
+      </section>
     </section>
   )
 }
@@ -212,8 +203,39 @@ const Footer = () => {
   
 
   return(
-    <footer>
+    <footer className='px-5 md:px-48 py-10 flex flex-col gap-5'>
+      <div className="top">
+        <a href="#">Questions? Contact us.</a>
+      </div>
+      <div className="center">
+        <ul className=''>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Ways to Watch</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Cookie Preferences</a></li>
+          <li><a href="#">Corperate Information</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Speed Test</a></li>
+          <li><a href="#">Legal Notices</a></li>
+          <li><a href="#">Only on Netflix</a></li>
+        </ul>
+      </div>
 
+      <div className="bottom">
+        <select name="" id="" className='px-5 py-1'>
+          <option value="English">English</option>
+        </select>
+
+        <div className="trade_mark">
+          Netflix Nigeria
+        </div>
+      </div>
     </footer>
   )
 }
@@ -228,7 +250,7 @@ function App() {
       <Section3 />
       <Section4 />
       <Section5 />
-      <Section6 />
+      {/* <Section6 /> */}
       <Footer />
     </>
   )
