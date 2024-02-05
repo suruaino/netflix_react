@@ -22,13 +22,13 @@ const Hero =() => {
     <section className='hero flex flex-col justify-between'>
       <div className="overlay"></div>
       <div className="hero_content text-center font-medium px-10 flex flex-col justify-center items-center gap-5">
-        <h1 className='text-3xl  font-bold'>Unlimited movies, TV shows, and more</h1>
+        <h1 className='text-3xl font-bold'>Unlimited movies, TV shows, and more</h1>
         <h2>Watch anywhere. Cancel anytime</h2>
         <h2>Readt to watch? Enter your email to create or restart your membership</h2>
         <form action="" className='w-full gap-4'>
 
           <input id='email' className='h-12 w-full md:w-4/5' type="email" placeholder='Email address' />
-          <button role='submit' className='h-12 font-bold px-8 flex justify-center items-center gap-4'>Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          <button role='submit' className='h-12 text-xl md:text-2xl font-bold px-8 flex justify-center items-center gap-4'>Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></button>
         </form>
       </div>
     </section>
@@ -38,7 +38,7 @@ const Hero =() => {
 const Section1 = () => {
 
   return(
-    <section className='section1 text-center px-10 py-10 flex flex-col md:flex-row '>
+    <section className='section1 text-center px-10 py-10 flex flex-col'>
       <div className="text flex flex-col gap-4">
         <h2 className='text-4xl font-bold'>Enjoy on your TV</h2>
         <p className="text-lg">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
@@ -53,7 +53,7 @@ const Section1 = () => {
 const Section2 = () => {
 
   return(
-    <section className='section1 text-center py-10 px-5 flex flex-col md:flex-row '>
+    <section className='section2 text-center py-10 px-5 flex flex-col'>
       <div className="text flex flex-col gap-4">
         <h2 className='text-3xl font-bold'>Download your shows to watch offline</h2>
         <p className="text-lg font-medium">Save your favorites easily and always have something to watch.</p>
@@ -68,7 +68,7 @@ const Section2 = () => {
 const Section3 = () => {
 
   return(
-    <section className='section1 text-center py-10 pb-20 px-5 flex flex-col md:flex-row gap-4'>
+    <section className='section3 text-center py-10 pb-20 px-5 flex flex-col md:flex-row gap-4'>
       <div className="left flex flex-col gap-4">
         <h2 className='text-3xl font-bold'>Watch everywhere</h2>
         <p className="text-lg font-medium">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
@@ -83,8 +83,8 @@ const Section3 = () => {
 const Section4 = () => {
 
   return(
-    <section className='section1 text-center py-10 px-5 flex flex-col md:flex-row gap-4'>
-      <div className="left flex flex-col gap-4">
+    <section className='section4 text-center py-10 px-5 flex flex-col md:flex-row gap-4'>
+      <div className="left md:text-left flex flex-col md:justify-center gap-4 order-2">
         <h2 className='text-4xl font-bold'>Create profiles for kids</h2>
         <p className="text-lg font-medium">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
       </div>
@@ -100,8 +100,8 @@ const Section5 = () => {
   return(
     <section className='faq w-full text-center py-10 px-5 flex flex-col items-center gap-8'>
       <h2 className=' text-4xl md:text-5xl font-bold'>Frequently Asked Questions</h2>
-      <div className="content_wrapper w-full flex flex-col gap-4">
-        <div className="questionbx flex flex-col gap-2">
+      <div className="content_wrapper flex flex-col gap-4">
+        <div className="questionbx   flex flex-col gap-2">
           <div className="question w-full h-auto  flex flex-col justify-between items-center relative">
             <input type="checkbox" className='w-full h-full absolute opacity-0' hecked/>
             <span className='w-full h-16 md:h-20 px-6 flex justify-between items-center'>
@@ -192,7 +192,7 @@ const Section5 = () => {
           <form action="" className='w-full flex flex-col items-center md:flex-row md:justify-center gap-4 md:gap-2'>
 
             <input id='bottom_email' className='w-full' type="email" placeholder='Email address' />
-            <button role='submit' className='text-2xl px-8 flex justify-center items-center gap-4'>Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            <button role='submit' className='text-2xl font-medium px-8 flex justify-center items-center gap-4'>Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></button>
           </form>
       </section>
     </section>
@@ -203,7 +203,7 @@ const Footer = () => {
   
 
   return(
-    <footer className='px-5 md:px-48 py-10 flex flex-col gap-5'>
+    <footer className='py-10 flex flex-col gap-5'>
       <div className="top">
         <a href="#">Questions? Contact us.</a>
       </div>

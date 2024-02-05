@@ -48,7 +48,8 @@ body{
 
 .hero{
   width: 100%;
-  height: 70dvh;
+  height: auto;
+  padding-bottom: 2rem;
   background: url(./assets/netflix-bg.jpg);
   background-position: center;
   background-size: cover;
@@ -60,7 +61,7 @@ body{
 .hero .overlay{
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, .85);
   z-index: 1;
 }
 
@@ -77,6 +78,7 @@ body{
 .hero .hero_content form{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .hero .hero_content form input{
 
@@ -89,20 +91,84 @@ body{
   background-color: var(--pri_btn_clr);
   border-radius: 4px;
   transition: .3s;
+  max-width: 14rem;
 }
 .hero .hero_content form button:hover{
   background-color: var(--pri_btn_clr-hover);
 }
 @media only screen and (min-width: 600px){
+  .hero{
+    height: 82dvh;
+  }
   .hero .hero_content form{
+    max-width: 45rem;
     flex-direction: row;
     gap: .5rem;
   }
   .hero .hero_content form input{
     width: 60%;
+    height: 3.5rem;
   }
   .hero .hero_content form button{
     width: 40%;
+    height: 3.5rem;
+  }
+}
+@media only screen and (min-width: 960px){
+  .hero{
+    height: 100dvh;
+  }
+  .hero .hero_content h1{
+    font-size: 3rem;
+  }
+  .hero .hero_content h2{
+    font-size: 1.5rem;
+  }
+  .section1,
+  .section2,
+  .section3{
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding-left: 3rem;
+  }
+  .section2 .text{
+    order: 1;
+  }
+  .section1 .text,
+  .section1 .img,
+  .section2 .text,
+  .section2 .img,
+  .section4 .left,
+  .section4 .img{
+    width: 50%;
+  }
+  .section1 h2,
+  .section2 h2
+  .section4 h2{
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .section3 h2{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    max-width: 10rem;
+  }
+  .section1 p,
+  .section2 p,
+  .section3 p,
+  .section4 p{
+    font-size: 1.6rem;
+  }
+  .section3 .left{
+    width: 50%;
+    text-align: left;
+  }
+  .bottom_call_to_action form{
+    max-width: 40rem;
+  }
+  footer{
+    padding: 6rem 4rem;
   }
 }
 * section{
@@ -116,9 +182,11 @@ body{
   }
 }
 .faq .content_wrapper{
-  max-width: 75rem;
+  min-width: 100%;
+
 }
 .question span{
+  text-align: left;
   background-color: var(--faq_quest_bg);
   transition: .3s;
 }
@@ -155,6 +223,7 @@ body{
 }
 .bottom_call_to_action form button{
   height: 3rem;
+  max-width: 14rem;
   background-color: var(--pri_btn_clr);
   border-radius: 4px;
   transition: .3s;
@@ -171,8 +240,8 @@ body{
   .bottom_call_to_action form{
     flex-direction: row;
     gap: .5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .bottom_call_to_action form input{
     width: 60%;
@@ -186,18 +255,52 @@ body{
 
 }
 @media only screen and (max-width: 768px){
+  .hero{
+    /* height: 60dvh; */
+  }
   .bottom_call_to_action form input{
-    /* max-width: 21rem; */
-    /* height: 3.5rem; */
     background-color: rgba(32, 32, 32, 0.466);
     padding: .2rem 1rem;
     border: 1px solid rgba(255, 255, 255, 0.501);
     border-radius: 4px;
   }
 }
+@media only screen and (min-width: 1280px){
+  .hero{
+    height: 95dvh;
+  }
+  .main_header{
+    padding: 1rem 10rem;
+  }
+  .main_header .logo{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .section1,
+  .section2,
+  .section3,
+  .section4{
+    padding: 6rem 10rem;
+  }
+  .section1 h2,
+  .section2 h2,
+  .section4 h2{
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .faq .content_wrapper{
+    min-width: 80%;
+ 
+  }
+  .questionbx{
+    width: 100%;
+    
+  }
+ }
 footer{
   background-color: var(--pri_bg);
   color: var(--sec_clr);
+  padding: 6rem 2rem;
 }
 footer a{
   text-decoration: underline .2px;
@@ -220,3 +323,10 @@ footer .center ul{
     gap: 1rem;
   }
 } */
+
+@media only screen and (min-width: 1280px){
+ footer{
+  padding: 6rem 10rem;
+  /* max-width: 40rem; */
+ }
+}
