@@ -101,8 +101,8 @@ const Section5 = () => {
     <section className='faq w-full text-center py-10 px-5 flex flex-col items-center gap-8'>
       <h2 className=' text-4xl md:text-5xl font-bold'>Frequently Asked Questions</h2>
       <div className="content_wrapper flex flex-col gap-4">
-        <div className="questionbx   flex flex-col gap-2">
-          <div className="question w-full h-auto  flex flex-col justify-between items-center relative">
+        <div className="questionbx  flex flex-col gap-2">
+          <div className="question h-auto  flex flex-col justify-between items-center relative">
             <input type="checkbox" className='w-full h-full absolute opacity-0' hecked/>
             <span className='w-full h-16 md:h-20 px-6 flex justify-between items-center'>
               <h4 className='text-xl md:text-2xl'>What is Netflix?</h4>
@@ -117,7 +117,7 @@ const Section5 = () => {
           </div>
           
           <div className="question w-full h-auto  flex flex-col justify-between items-center relative">
-            <input type="checkbox" className='w-full h-full absolute opacity-0' hecked/>
+            <input type="checkbox" className='w-full h-full absolute opacity-0' />
             <span className='w-full h-16 md:h-20 px-6 flex justify-between items-center'>
               <h4 className='text-xl md:text-2xl'>How much does Netflix cost?</h4>
               <img className='w-3 md:w-6' src={cross} alt=""  />
